@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </a>
+
+    <nav class="navbar active">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="review.html">Review</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- BUTTONS (مهم جداً للسلة) -->
+    <div class="buttons">
+
+        <button id="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </button>
+
+        <button id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </div>
+
+    <!-- CART -->
+    <div class="cart-items-container"></div>
+
+</header>
+
+
+<!-- PRODUCTS SECTION -->
+<section class="products" id="products">
+
+    <h1 class="heading">our <span>Products</span></h1>
+
+    <div class="box-container">
+
+        <!-- PRODUCT 1 -->
+        <div class="box">
+
+            <div class="box-head">
+                <span class="title">MINI Burger</span>
+                <a href="#" class="name">Bacon Burger</a>
+                <div class="price">34$</div>
+            </div>
+
+            <div class="image">
+                <img src="images/product-1.png" alt="product">
+            </div>
+
+            <div class="box-bottom">
+                <a href="#" class="btn add-to-cart" 
+                   data-name="Bacon Burger" 
+                   data-price="34">
+                    Add to cart
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="box">
+
+            <div class="box-head">
+                <span class="title">MINI Burger</span>
+                <a href="#" class="name">Cheeseburger</a>
+                <div class="price">23$</div>
+            </div>
+
+            <div class="image">
+                <img src="images/product-2.png" alt="product">
+            </div>
+
+            <div class="box-bottom">
+                <a href="#" class="btn add-to-cart" 
+                   data-name="Cheeseburger" 
+                   data-price="23">
+                    Add to cart
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="box">
+
+            <div class="box-head">
+                <span class="title">MINI Burger</span>
+                <a href="#" class="name">Tavuk Burger</a>
+                <div class="price">22$</div>
+            </div>
+
+            <div class="image">
+                <img src="images/menu-4.png" alt="product">
+            </div>
+
+            <div class="box-bottom">
+                <a href="#" class="btn add-to-cart" 
+                   data-name="Tavuk Burger" 
+                   data-price="22">
+                    Add to cart
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<section class="footer">
+
+    <div class="credit">
+        created by <span>Emin BasBayan</span> | all rights reserved
+    </div>
+
+</section>
+
+
+<!-- SCRIPT -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
